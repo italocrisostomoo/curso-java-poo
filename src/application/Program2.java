@@ -14,7 +14,7 @@ public class Program2 {
 		
 		Product product = new Product();
 		
-		System.out.println("Enter product data: ");
+		System.out.println("Enter Product data: ");
 		System.out.print("Name: ");
 		product.name = sc.nextLine();
 		
