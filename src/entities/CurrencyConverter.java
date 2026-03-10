@@ -7,6 +7,6 @@ public class CurrencyConverter {
 	public static double converter(double priceDollars, double qtDollars) {
 
 		return (priceDollars * qtDollars) + (priceDollars * qtDollars * IOF);
-		// return (priceDollars * qtDollars) - (priceDollars * qtDollars / IOF);
+		
 	}
 }

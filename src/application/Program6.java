@@ -18,7 +18,6 @@ public class Program6 {
 		System.out.print("How many Dollars(US$) will be bought? ");
 		double qtDollars = sc.nextDouble();
 		
-		//double priceReais = CurrencyConverter.converter(priceDollars, qtDollars);
 		System.out.printf("Amount to be paid in Reais(R$) = %.2f ", CurrencyConverter.converter(priceDollars, qtDollars) );
 		sc.close();
 
