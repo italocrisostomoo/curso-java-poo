@@ -8,22 +8,23 @@ public class Program2 {
 
 	public static void main(String[] args) {
 
-		int feedback, quantity;
+		int feedback;
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		Product product = new Product();
 
 		System.out.println("Enter Product data: \n");
 		System.out.print("Name: ");
-		product.name = sc.nextLine();
+		String name = sc.nextLine();
 
 		System.out.print("Price: ");
-		product.price = sc.nextDouble();
+		double price = sc.nextDouble();
 
 		System.out.print("Quantity in stock: ");
-		product.quantity = sc.nextInt();
+	    int quantity = sc.nextInt();
+		
+		Product product = new Product(name, price, quantity);
 
 		System.out.println("\nProduct data: " + product);
 
@@ -61,6 +62,8 @@ public class Program2 {
 			System.out.println("\nProduct data: " + product);
 
 		} while (feedback != 999);
+		
+		System.out.println("Current product data: " + product);
 		
 		sc.close();
 	}
