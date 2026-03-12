@@ -21,7 +21,6 @@ public class Program3 {
 		
 		System.out.println(retangulo.toString());
 		
-		
 		sc.close();
 	}
 
