@@ -21,10 +21,10 @@ public class Program2 {
 		System.out.print("Price: ");
 		double price = sc.nextDouble();
 
-		System.out.print("Quantity in stock: ");
-	    int quantity = sc.nextInt();
+		//System.out.print("Quantity in stock: ");
+	    //int quantity = sc.nextInt();
 		
-		Product product = new Product(name, price, quantity);
+		Product product = new Product(name, price);
 
 		System.out.println("\nProduct data: " + product);
 
@@ -37,7 +37,7 @@ public class Program2 {
 			case 1:
 
 				System.out.println("\nUnits to be added: ");
-				quantity = sc.nextInt();
+			    int quantity = sc.nextInt();
 				product.AddProducts(quantity);
 				break;
 
