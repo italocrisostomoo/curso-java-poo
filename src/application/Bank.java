@@ -21,7 +21,8 @@ public class Bank {
 		String holder = sc.nextLine();
 
 		Account account = new Account(number, holder);
-
+		
+		//Initial deposit
 		System.out.print("\nIs there an initial deposit (y/n)? ");
 		char feedback = sc.next().charAt(0);
 
@@ -37,13 +38,15 @@ public class Bank {
 		}
 
 		System.out.println(account);
-
+		
+		//Deposit
 		System.out.print("\n\nEnter a deposit value: ");
 		double depositValue = sc.nextDouble();
 		account.Deposit(depositValue);
 
 		System.out.println("\nUpdated current data: \n" + account);
 		
+		//Withdraw
 		System.out.print("\n\nEnter a withdrawal value: ");
 		double withdrawalValue = sc.nextDouble();
 		account.Withdrawal(withdrawalValue);
